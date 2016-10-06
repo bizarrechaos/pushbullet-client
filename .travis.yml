@@ -1,0 +1,12 @@
+language: python
+install:
+  - pip install tox
+script:
+  - tox
+notifications:
+  slack:
+    rooms:
+      secure: BRT62mmuWj5cLYW7v6p6accr+q0oBIPNsl0+aETRY9eg7s9uD4erO5xzoejooJz276WikDQ2lIm1F+46Tz7jpWx4HYhHw1paPNj7kkXso7C9iCbj1F6YVPTKeE79a+iRkgtBriniFkrg4wlESVbEM+D+7BFa7h/e3eS889nJjbO433XVF+ypmJk0QD+wmGgUU4EudqkPIlpY7bJYQs5lXdXt3aYETQADq2/XBlX+aMq5X7lP2bpusOdpgBcrbqh/JtTgVCxdRdtnSZI8Ky4pdmlfOMYe+XoMCHOwC5/9oqzNI94P7+ClmCyesIpv5Z4JYMgCq5nn+QCcCtPTNSr1LZL9jRWWKQcnjT72O3Xb8NLUc+nu01Ekp98r7rr3HDJb1NTjR7PlZfiVP+1d5SaCx+dau09+g7Ku4AUxP2Ot/zLfEGBRO90O1g53e372KaZyHhSP3JWTWpA/a1klVteuNgGnnIPbCcqxsqLEMQjT0aWwMjobEAOe7avHVRB8z5mvJuBIhV3OhXwgE9KfdV1nErXk0vThtTbPAX7zdfrgm20na65LKvh5xGTU+3ik6BXet9L5fRtD4dAedxwTjpU5Z6x6N4UGkbEm7xMUE4+4nFgIfYNcM5u3PUzZyxFSfS1hdRXPdgRlL0Ig5hGCQJXPWNhh23MkQUDFo5rXZ7L2dK8=
+    on_start: always
+    on_failure: always
+    on_success: always
