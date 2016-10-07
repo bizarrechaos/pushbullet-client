@@ -20,5 +20,16 @@ python setup.py install
 
 ####Usage overview:
 ```
-pushbullet
+Usage:
+    pushbullet device list [all] [options]
+    pushbullet push list [unread] [options]
+    pushbullet push note [id <iden>|name <name>] <title> <body> [options]
+    pushbullet push link [id <iden>|name <name>] <title> <body> <url> [options]
+
+Options:
+    -a <token>, --access-token <token>      Provide an access token.
+    -h, --help                              Show this page.
+    -v, --version                           Show the application version
 ```
+
+######powered by [pushbullet](https://www.pushbullet.com/)
